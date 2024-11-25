@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Customizer</title>
+    <style>
+        body {
+            width: 220px;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="number"], input[type="color"] {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 5px;
+        }
+        button {
+            margin-top: 15px;
+            width: 100%;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>CSS Customizer</h3>
+    <label>
+        Font Size (px):
+        <input type="number" id="fontSize" min="8" max="72" placeholder="Default">
+    </label>
+    <label>
+        Text Color:
+        <input type="color" id="textColor">
+    </label>
+    <label>
+        Background Color:
+        <input type="color" id="bgColor">
+    </label>
+    <button id="applyBtn">Apply</button>
+    <button id="resetBtn">Reset</button>
+</body>
+<script src="popup.js"></script>
+</html>
